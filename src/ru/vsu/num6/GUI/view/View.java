@@ -35,7 +35,7 @@ public class View extends JFrame {
             public void keyTyped(KeyEvent keyEvent) {
                 char symbol = keyEvent.getKeyChar();
                 if ((symbol < '0' || symbol > '9') && symbol != KeyEvent.VK_COMMA && symbol != KeyEvent.VK_SEMICOLON &&
-                symbol != KeyEvent.VK_SPACE) {
+                        symbol != KeyEvent.VK_SPACE) {
                     keyEvent.consume();
                 }
             }
