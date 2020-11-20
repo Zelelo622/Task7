@@ -9,8 +9,8 @@ import java.awt.event.ActionListener;
 
 public class CalcButtonController implements ActionListener {
 
-    JTextField inputArrText;
-    JTextField outputArrText;
+    private JTextField inputArrText;
+    private JTextField outputArrText;
 
     public CalcButtonController(JTextField inputArrText, JTextField outputArrText) {
         this.inputArrText = inputArrText;

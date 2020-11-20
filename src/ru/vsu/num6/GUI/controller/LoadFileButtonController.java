@@ -4,14 +4,13 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class LoadFileButtonController implements ActionListener {
 
-    JTextField inputArrText;
-    JPanel rootPanel;
+    private JTextField inputArrText;
+    private JPanel rootPanel;
 
     public LoadFileButtonController(JTextField inputArrText, JPanel rootPanel) {
         this.inputArrText = inputArrText;
