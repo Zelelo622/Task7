@@ -1,6 +1,6 @@
 package ru.vsu.num6.GUI.controller;
 
-import ru.vsu.num6.GUI.model.Model;
+import ru.vsu.num6.GUI.logic.Logic;
 import ru.vsu.num6.GUI.utils.ArrayUtil;
 
 import javax.swing.*;
@@ -19,9 +19,10 @@ public class CalcButtonController implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
+        Logic logic = new Logic();
         String inputText = inputArrText.getText();
         int[] array = ArrayUtil.toIntArray(inputText);
-        int sumElement = Model.getSumOfElements(array);
+        int sumElement = logic.getSumOfElements(array);
         outputArrText.setText(String.valueOf(sumElement));
     }
 }

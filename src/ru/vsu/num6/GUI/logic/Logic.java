@@ -1,8 +1,8 @@
-package ru.vsu.num6.GUI.model;
+package ru.vsu.num6.GUI.logic;
 
-public class Model {
+public class Logic {
 
-    public static int getSumOfElements(int[] array) {
+    public int getSumOfElements(int[] array) {
         int sumElements = 0;
         int maxIndex = findLargestValueOfArray(array);
         int minIndex = findMinimumValueOfArray(array);
@@ -13,7 +13,7 @@ public class Model {
         return sumElements;
     }
 
-    private static int findLargestValueOfArray(int[] array) {
+    private int findLargestValueOfArray(int[] array) {
         int maxIndex = 0;
 
         for (int i = 0; i < array.length; i++) {
@@ -24,7 +24,7 @@ public class Model {
         return maxIndex;
     }
 
-    private static int findMinimumValueOfArray(int[] array) {
+    private int findMinimumValueOfArray(int[] array) {
         int minIndex = 0;
 
         for (int i = 0; i < array.length; i++) {
