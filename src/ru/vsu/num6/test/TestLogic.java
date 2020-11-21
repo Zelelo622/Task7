@@ -1,4 +1,4 @@
-package ru.vsu.num6.Test;
+package ru.vsu.num6.test;
 
 import org.junit.Test;
 import ru.vsu.num6.GUI.logic.Logic;
@@ -6,7 +6,6 @@ import ru.vsu.num6.GUI.logic.Logic;
 import static org.junit.Assert.assertEquals;
 
 public class TestLogic {
-
     @Test
     public void testGetSumOfElements() {
         Logic logic = new Logic();
