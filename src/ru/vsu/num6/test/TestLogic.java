@@ -6,6 +6,7 @@ import ru.vsu.num6.GUI.logic.Logic;
 import static org.junit.Assert.assertEquals;
 
 public class TestLogic {
+
     @Test
     public void testGetSumOfElements() {
         Logic logic = new Logic();
@@ -13,7 +14,7 @@ public class TestLogic {
         assertEquals(9, actual);
         int actual2 = logic.getSumOfElements(new int[]{0, 15, 1700, 121, 74, 197, 1600, -10, 0, -1});
         assertEquals(1992, actual2);
-        int actual3= logic.getSumOfElements(new int[]{0, 1, 2, 3, 4});
+        int actual3 = logic.getSumOfElements(new int[]{0, 1, 2, 3, 4});
         assertEquals(0, actual3);
         int actual4 = logic.getSumOfElements(new int[]{10, 10, 10, 10, 10});
         assertEquals(0, actual4);
