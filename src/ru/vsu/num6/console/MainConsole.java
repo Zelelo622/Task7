@@ -65,11 +65,6 @@ public class MainConsole {
         }
     }
 
-    private static void printTest(int calc, int rightSum, boolean checkResult) {
-        System.out.printf("Calculated amount: %d; Correct amount: %d; Result: %b\n", calc, rightSum, checkResult);
-        System.out.println("-----------");
-    }
-
     private static void printResults(int minIndex, int maxIndex, int sumElements, int[] array) {
         String arr = Arrays.toString(array);
         System.out.println("Injected array: " + arr + "\n");
